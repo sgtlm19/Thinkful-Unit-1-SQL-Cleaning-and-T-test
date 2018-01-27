@@ -17,8 +17,9 @@
     
 3.) You work at a hotel website and currently the website ranks search results by price. For simplicity's sake, let's say it's a website for one city with 100 hotels. You are tasked with proposing a better ranking system. You have session information, price information for the hotels, and whether each hotel is currently available.
 
-    First, I would find out what are the top 10 booked hotels.  Next, I would find the average cost of the hotel booked.  The ranking system 
-    would rank by the cheapest hotel and then it would be ranked by hotel's number of bookings.
+    First, I would find out what are the top 10 booked hotels.  Next, I would find the average cost of the hotel booked.  The ranking system would rank by availibility, by the cheapest hotel and then it would be ranked by hotel with the most bookings.  I would experiment
+    with this ranking for a period of time and see if it was successful in improving bookings.  I would create a statistical test to see
+    if the new ranking system improved against the other periods with the old ranking system. 
     
 4.) You work at a social network, and the management is worried about churn (users stopping using the product). You are tasked with finding out if their churn is atypical. You have three years of data for users with an entry for every time they've logged in, including the timestamp and length of session
 
