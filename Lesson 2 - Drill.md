@@ -1,5 +1,6 @@
-Practice querying from Bay Area Bike Share DB
+## Practice querying from Bay Area Bike Share DB
 
+#### SELECT, FROM, WHERE
 1.) The ID's and durations for all trips of duration greater than 500, ordered by duration.
     
     SELECT 
@@ -22,3 +23,32 @@ Practice querying from Bay Area Bike Share DB
     SELECT MinTemperatureF
     FROM weather
     WHERE ZIP=94301 AND PrecipitationIn NOT LIKE (0);
+
+#### Aggregates and Groups
+4.) What was the hottest day in our data set? Where was that?
+
+	SELECT MAX(MaxTemperatureF), ZIP
+	FROM weather;
+	
+	Hottest Temperature is 134F and it occurred at ZIP 94063
+
+5.) How many trips started at each station?
+
+	SELECT COUNT(trip_id), start_station
+	FROM trips
+	GROUP BY start_station;
+	
+6.) What's the shortest trip that happened?
+
+	SELECT MIN(duration)
+	FROM trips;
+
+7.) What is the average trip duration, by end station?
+
+	SELECT AVG(duration), end_station
+	FROM trips
+	GROUP BY end_station;
+	
+#### Joins and CTEs
+
+8.) 
