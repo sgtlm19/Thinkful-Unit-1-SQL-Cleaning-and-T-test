@@ -51,4 +51,31 @@
 	
 #### Joins and CTEs
 
-8.) 
+8.) What are the three longest trips on rainy days?
+
+	SELECT
+		weather.PrecipitationIn,
+		trips.duration
+	FROM
+		trips
+	JOIN
+		weather
+	ON
+		trips.zip_code = weather.ZIP
+	WHERE PrecipitationIn NOT LIKE ('0')
+	ORDER BY duration DESC
+	LIMIT 3;
+
+9.) Which station is empty most often?
+
+	SELECT 
+		COUNT(trip_id) AS trip_count,
+		start_station
+	FROM
+		trips
+	GROUP BY
+		start_station
+	ORDER BY trip_count;
+	
+10.) 
+	
