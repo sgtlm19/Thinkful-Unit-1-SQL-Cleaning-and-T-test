@@ -77,5 +77,32 @@
 		start_station
 	ORDER BY trip_count;
 	
-10.) 
+10.) Return a list of stations with a count of number of trips starting at that station but ordered by dock count.
+
+	WITH
+		count_trips
+	AS     (
+	SELECT 
+		start_station stat,
+		COUNT(start_date) counts
+	FROM
+		trips
+	GROUP BY 1
+	)
+
+	SELECT
+		c.stat,
+		c.counts,
+		s.dockcount
+	FROM
+		count_trips c
+	JOIN
+		stations s
+	ON
+		c.stat = s.name
+	ORDER BY dockcount;
+
+11.) (Challenge) What's the length of the longest trip for each day it rains anywhere?
+	
+	
 	
