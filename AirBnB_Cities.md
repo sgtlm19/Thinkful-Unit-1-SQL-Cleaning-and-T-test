@@ -1,16 +1,17 @@
 ## AirBnB Cities Challenge ##
 
-1.) What's the most expensive listing? What else can you tell me about the listing?
+1.) What's the most expensive listing(s)? What else can you tell me about the listing(s)?
 
-    -- Remove $ sign from Price variable
-    UPDATE listings
-    SET price = REPLACE(price, '$', '');
-    
     -- Find most expensive listing
     SELECT MAX(price)
-    FROM listings;
+    FROM la_listings;
     
-    -- Most expensive listing is $9,999.00, lets see what the listing looks like
+    -- Most expensive listing is $10,000.00, lets see what the listing looks like
     SELECT *
-    FROM listings
-    WHERE price = '9,999.00';
+    FROM la_listings
+    WHERE price = '10000';
+
+
+
+
+2.) What neighborhoods seem to be the most popular?
