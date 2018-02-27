@@ -16,8 +16,8 @@ For each of the following scenarios, call out the potential biases in the propos
     There is bias in this method.  The first week will most likely show an increase in website visits but that time is very short.
     A longer period of measurement is needed to effectively measure the new ad billboard campaign effects.
     
-4. You launch a loyalty program but see no change in visits in the first week.
+4.) You launch a loyalty program but see no change in visits in the first week.
 
-   There is bias in this method.  The first week will most likely not show any effects for a loyalty program.  Typically a loyalty
-   program requires a record of continuous visits or actions for a customer to receive an incentive.  A longer period of 
-   measurement is needed to effectively measure the new loyalty program.  
+    There is bias in this method.  The first week will most likely not show any effects for a loyalty program.  Typically a loyalty
+    program requires a record of continuous visits or actions for a customer to receive an incentive.  A longer period of 
+    measurement is needed to effectively measure the new loyalty program.  
